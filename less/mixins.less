@@ -1,1 +1,29 @@
 // Mixins Here
+.activateBtn (@bg: black,@color: white) {
+    background-color: @bg;
+    color: @color;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    height: 10%;
+    width: 50%;
+    font-size: 2rem;
+    margin: 0 10px 20px;
+    @media @phone {
+        width: 100%;
+        height: 40px;
+    }
+    &:hover {
+        background-color: white;
+        color: black;
+        
+    }
+}
+.disFlex {
+    display: flex;
+}
+.navText {
+    color: gray;
+    text-decoration: none;
+}
+@phone: ~ '(max-width:500px)';
