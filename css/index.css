@@ -1,3 +1,10 @@
+.disFlex {
+  display: flex;
+}
+.navText {
+  color: gray;
+  text-decoration: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,11 +187,11 @@ nav div h1 {
   padding-top: 10px;
 }
 nav div a {
+  color: gray;
   text-decoration: none;
   display: flex;
   padding: 10px;
   justify-content: center;
-  color: gray;
 }
 footer {
   color: #22283B;
@@ -249,6 +256,7 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
+    padding: 1%;
   }
 }
 .home .walk .walk-text {
@@ -257,6 +265,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text {
     width: 100%;
+    padding: 3%;
   }
 }
 .home .walk .walk-text h3 {
@@ -293,7 +302,6 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-img {
     width: 100%;
-    margin: none;
   }
 }
 .home .walk .walk-img img {

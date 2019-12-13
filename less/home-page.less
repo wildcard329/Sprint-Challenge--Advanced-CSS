@@ -15,7 +15,7 @@
   }
 
   .space-images {
-    display: flex;
+    .disFlex;
     flex-wrap: wrap;
     width: 100%;
     .blast {
@@ -56,17 +56,19 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .disFlex;
     justify-content: center;
     @media @phone {
-      display: flex;
+      .disFlex;
       flex-direction: column-reverse;
+      padding: 1%;
     }
 
     .walk-text {
       width: 50%;
       @media @phone {
         width: 100%;
+        padding: 3%;
       }
 
       h3 {
@@ -87,7 +89,6 @@
       margin-left: 4%;
       @media @phone {
         width: 100%;
-        margin: none;
       }
       
       img {
