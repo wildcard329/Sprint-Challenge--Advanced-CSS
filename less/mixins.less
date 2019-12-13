@@ -1,1 +1,17 @@
 // Mixins Here
+.activateBtn (@bg: black,@color: white) {
+    background-color: @bg;
+    color: @color;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    height: 5%;
+    width: 50%;
+    font-size: 2rem;
+    margin: 0 10px 20px;
+    &:hover {
+        background-color: white;
+        color: black;
+        
+    }
+}
